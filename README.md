@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Hasina Akter - Hasina-portfolio
 
-## Getting Started
+A modern, responsive, and professional portfolio website built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** to showcase my skills, About,projects,Education and Contact
 
-First, run the development server:
+## 🔗 Live Demo
 
-```bash
+https://hasina-portfolio-lyart.vercel.app
+
+## 💻 GitHub Repository
+
+https://github.com/hasina-code/hasina-portfolio
+
+---
+
+## ✨ Features
+
+- Responsive Design (Mobile, Tablet & Desktop)
+- Light & Dark Theme
+- Smooth Animations with Framer Motion
+- Professional Hero Section
+- About Me Section
+- Skills Section
+- Education & Experience
+- Project Showcase
+- Individual Project Details Page
+- Resume Download Button
+- Contact Section
+- Social Media Links
+- Clean & Modern UI
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+### Icons
+
+- Lucide React
+- React Icons
+
+### Deployment
+
+- Vercel
+
+## 🚀 Getting Started
+
+### Run Development
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Featured Projects
 
-## Learn More
+### 1. PetNest
 
-To learn more about Next.js, take a look at the following resources:
+A modern Pet Adoption Platform where users can browse pets, submit adoption requests, and manage their listings through a personalized dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Key Features:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- JWT Authentication
+- Pet Management
+- Adoption Request System
+- User Dashboard
+- Responsive Design
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. SkillBridge
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+An online course management platform that allows users to explore courses and instructors to manage educational content efficiently.
+
+**Key Features:**
+
+- Authentication System
+- Course Management
+- Responsive UI
+- Modern Dashboard
+- Clean User Experience
+
+---
+
+### 3. ArtHub
+
+An online art marketplace where artists can showcase their artwork and users can explore and manage art collections.
+
+**Key Features:**
+
+- Authentication
+- Artwork Management
+- Artist Dashboard
+- Responsive Design
+- Modern UI
+
+## 📞 Contact
+
+**Name:** Hasina Akter
+
+**Email:** hasina.akter171407@gmail.com
+
+**Phone:** +8801822903392
+
+**Location:** Noakhali, Bangladesh
+
+---
+
+## 🌐 Connect With Me
+
+- GitHub: https://github.com/hasina-code
+- LinkedIn: https://www.linkedin.com/in/hasina-akter-dev/
