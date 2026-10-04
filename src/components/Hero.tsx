@@ -95,18 +95,20 @@ export default function Hero() {
             transition={{ delay: 0.9 }}
             className="flex flex-wrap gap-5 mt-10"
           >
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/resume.pdf"
-              className="flex items-center gap-2
-              bg-cyan-500 hover:bg-cyan-600
-              text-white px-8 py-4 rounded-xl
-              font-semibold shadow-xl"
-            >
-              <Download size={20} />
-              Download Resume
-            </motion.a>
+      <motion.a
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  href="https://drive.google.com/file/d/1QV_SSXlOjbhWk4lPTBXnP73Kx4jTaAYy/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2
+  bg-cyan-500 hover:bg-cyan-600
+  text-white px-8 py-4 rounded-xl
+  font-semibold shadow-xl"
+>
+  <Download size={20} />
+  Download Resume
+</motion.a>
 
             <motion.a
               whileHover={{ scale: 1.05 }}
