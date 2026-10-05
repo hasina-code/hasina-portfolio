@@ -170,10 +170,12 @@ export default function Contact() {
               {/* Name Inputs */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">First Name</label>
+                  <label htmlFor="contact-first-name" className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">First Name</label>
                   <input
+                    id="contact-first-name"
                     type="text"
                     name="firstName"
+                    autoComplete="given-name"
                     placeholder="John"
                     value={formData.firstName}
                     onChange={handleChange}
@@ -181,10 +183,12 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Last Name</label>
+                  <label htmlFor="contact-last-name" className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Last Name</label>
                   <input
+                    id="contact-last-name"
                     type="text"
                     name="lastName"
+                    autoComplete="family-name"
                     placeholder="Doe"
                     value={formData.lastName}
                     onChange={handleChange}
@@ -195,11 +199,13 @@ export default function Contact() {
 
               {/* Email Input */}
               <div>
-                <label className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Email Address</label>
+                <label htmlFor="contact-email" className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Email Address</label>
                 <input
+                  id="contact-email"
                   type="email"
                   name="email"
-                    required
+                  autoComplete="email"
+                  required
                   placeholder="john@example.com"
                   value={formData.email}
                   onChange={handleChange}
@@ -209,8 +215,9 @@ export default function Contact() {
 
               {/* Subject Input */}
               <div>
-                <label className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Subject</label>
+                <label htmlFor="contact-subject" className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Subject</label>
                 <input
+                  id="contact-subject"
                   type="text"
                   name="subject"
                   placeholder="Project Collaboration"
@@ -222,8 +229,9 @@ export default function Contact() {
 
               {/* Message Input */}
               <div>
-                <label className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Message</label>
+                <label htmlFor="contact-message" className="mb-1.5 block text-xs font-medium text-slate-600 dark:text-slate-300">Message</label>
                 <textarea
+                  id="contact-message"
                   name="message"
                   rows={4}
                   required
