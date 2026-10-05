@@ -61,15 +61,26 @@ export default function Contact() {
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
 
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, x: -30 },
+              visible: {
+                opacity: 1,
+                x: 0,
+                transition: { duration: 0.6, staggerChildren: 0.12 },
+              },
+            }}
             className="space-y-4 lg:col-span-5"
           >
 
             <motion.a
               href="mailto:hasina.akter171407@gmail.com"
+              variants={{
+                hidden: { opacity: 0, y: 14 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.35 } },
+              }}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.2 }}
@@ -86,6 +97,10 @@ export default function Contact() {
 
             <motion.a
               href="tel:+8801822903392"
+              variants={{
+                hidden: { opacity: 0, y: 14 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.35 } },
+              }}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.2 }}
@@ -104,6 +119,10 @@ export default function Contact() {
               href="https://wa.me/8801822903392"
               target="_blank"
               rel="noopener noreferrer"
+              variants={{
+                hidden: { opacity: 0, y: 14 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.35 } },
+              }}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.2 }}
@@ -123,6 +142,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open Noakhali, Bangladesh in Google Maps"
+              variants={{
+                hidden: { opacity: 0, y: 14 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.35 } },
+              }}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.2 }}
