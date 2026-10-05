@@ -1,143 +1,143 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import React, { useState } from "react";
+import { Mail, Phone, MessageSquare, Send, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="
-      py-20
-      bg-gray-50
-      dark:bg-slate-950
-      text-gray-900
-      dark:text-white
-      transition-colors
-      duration-300
-      "
+      className="relative overflow-hidden bg-linear-to-b from-white via-slate-50 to-white py-24 transition-colors duration-500 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950"
     >
-
-      <div className="max-w-6xl mx-auto px-6">
-
-
-        <div className="text-center mb-12">
-
-          <h2 className="text-4xl md:text-5xl font-bold">
-
-            Contact{" "}
-
-            <span className="text-cyan-500">
-              Me
-            </span>
-
+      <div className="mx-auto w-full max-w-7xl px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <span className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
+            Get In Touch
+          </span>
+          <h2 className="mt-4 text-4xl font-extrabold text-slate-900 dark:text-white md:text-5xl">
+            Let&apos;s <span className="text-cyan-500">Connect</span>
           </h2>
-
-
-          <p className="
-          mt-4
-          text-gray-600
-          dark:text-gray-400
-          ">
-            Have a project idea or want to work together?
-            Feel free to contact me anytime.
+          <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300 md:text-base">
+            Have a project in mind, a collaboration idea, or just want to say hello? <br />
+            My inbox is always open.
           </p>
+        </motion.div>
 
+        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12">
 
-        </div>
-
-
-
-
-        <div className="grid md:grid-cols-3 gap-6">
-
-
-          {/* Email */}
           <motion.div
-            whileHover={{ y: -8 }}
-            className="
-            p-6
-            rounded-2xl
-            bg-white
-            dark:bg-slate-900
-            border
-            border-gray-200
-            dark:border-slate-800
-            shadow-md
-            "
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-4 lg:col-span-5"
           >
 
-            <Mail className="text-cyan-500 mb-4" size={35}/>
+            <motion.a
+              href="mailto:hasina.akter171407@gmail.com"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ duration: 0.2 }}
+              className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-cyan-500/50 dark:border-slate-800 dark:bg-slate-900/60"
+            >
+              <div className="rounded-lg bg-cyan-500/10 p-2.5 text-cyan-600 dark:text-cyan-400">
+                <Mail size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">EMAIL</p>
+                <p className="mt-0.5 break-all text-sm font-medium text-slate-800 dark:text-slate-200">hasina.akter171407@gmail.com</p>
+              </div>
+            </motion.a>
 
-            <h3 className="text-xl font-semibold">
-              Email
-            </h3>
+            <motion.a
+              href="tel:+8801822903392"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ duration: 0.2 }}
+              className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-cyan-500/50 dark:border-slate-800 dark:bg-slate-900/60"
+            >
+              <div className="rounded-lg bg-cyan-500/10 p-2.5 text-cyan-600 dark:text-cyan-400">
+                <Phone size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">PHONE</p>
+                <p className="mt-0.5 text-sm font-medium text-slate-800 dark:text-slate-200">+880 1822903392</p>
+              </div>
+            </motion.a>
 
-            <p className="
-            mt-2
-            text-gray-600
-            dark:text-gray-400
-            ">
-              hasina.akter171407@gmail.com
-            </p>
+            <motion.a
+              href="https://wa.me/8801822903392"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ duration: 0.2 }}
+              className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-cyan-500/50 dark:border-slate-800 dark:bg-slate-900/60"
+            >
+              <div className="rounded-lg bg-cyan-500/10 p-2.5 text-cyan-600 dark:text-cyan-400">
+                <MessageSquare size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">WHATSAPP</p>
+                <p className="mt-0.5 text-sm font-medium text-slate-800 dark:text-slate-200">+880 1822903392</p>
+              </div>
+            </motion.a>
 
+            <motion.a
+              href="https://www.google.com/maps/search/?api=1&query=Noakhali%2C%20Bangladesh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Noakhali, Bangladesh in Google Maps"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.99 }}
+              transition={{ duration: 0.2 }}
+              className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-cyan-500/50 dark:border-slate-800 dark:bg-slate-900/60"
+            >
+              <div className="rounded-lg bg-cyan-500/10 p-2.5 text-cyan-600 dark:text-cyan-400">
+                <MapPin size={18} />
+              </div>
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">LOCATION</p>
+                <p className="mt-0.5 text-sm font-medium text-slate-800 dark:text-slate-200">Noakhali, Bangladesh</p>
+              </div>
+            </motion.a>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="https://github.com/hasina-code"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:bg-cyan-500 hover:text-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300"
+              >
+                <FaGithub size={18} />
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hasina-akter-dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-cyan-500 hover:bg-cyan-500 hover:text-white dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300"
+              >
+                <FaLinkedin size={18} />
+                LinkedIn
+              </a>
+            </div>
           </motion.div>
 
-
-
-
-          {/* Phone */}
           <motion.div
-            whileHover={{ y: -8 }}
-            className="
-            p-6
-            rounded-2xl
-            bg-white
-            dark:bg-slate-900
-            border
-            border-gray-200
-            dark:border-slate-800
-            shadow-md
-            "
-          >
-
-            <Phone className="text-cyan-500 mb-4" size={35}/>
-
-
-            <h3 className="text-xl font-semibold">
-              Phone
-            </h3>
-
-
-            <p className="
-            mt-2
-            text-gray-600
-            dark:text-gray-400
-            ">
-              +8801822903392
-            </p>
-
-
-          </motion.div>
-
-
-
-
-
-          {/* Location */}
-          <motion.div
-            whileHover={{ y: -8 }}
-            className="
-            p-6
-            rounded-2xl
-            bg-white
-            dark:bg-slate-900
-            border
-            border-gray-200
-            dark:border-slate-800
-            shadow-md
-            "
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-slate-900/60 md:p-8 lg:col-span-7"
           >
 
             <MapPin className="text-cyan-500 mb-4" size={35}/>
@@ -161,67 +161,7 @@ export default function Contact() {
 
 
         </div>
-
-
-
-
-
-        {/* Social */}
-        <div className="flex justify-center gap-5 mt-12">
-
-
-          <a
-            href="https://github.com/hasina-code"
-            target="_blank"
-            className="
-            p-4
-            rounded-full
-            bg-white
-            dark:bg-slate-900
-            border
-            border-gray-200
-            dark:border-slate-700
-            hover:bg-cyan-500
-            hover:text-white
-            transition
-            "
-          >
-
-            <FaGithub size={28}/>
-
-          </a>
-
-
-
-
-          <a
-            href="https://www.linkedin.com/in/hasina-akter-dev/"
-            target="_blank"
-            className="
-            p-4
-            rounded-full
-            bg-white
-            dark:bg-slate-900
-            border
-            border-gray-200
-            dark:border-slate-700
-            hover:bg-cyan-500
-            hover:text-white
-            transition
-            "
-          >
-
-            <FaLinkedin size={28}/>
-
-          </a>
-
-
-        </div>
-
-
-
       </div>
-
     </section>
   );
 }
